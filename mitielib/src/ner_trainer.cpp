@@ -376,9 +376,7 @@ namespace mitie
 
         if (count_of_least_common_label(labels) > 1)
         {
-            //train_ner_segment_classifier_objective obj(samples, labels, num_threads, beta, get_all_labels().size(), 2000);
-            //Only for develop purposes
-            train_ner_segment_classifier_objective obj(samples, labels, num_threads, beta, get_all_labels().size(), 5);
+            train_ner_segment_classifier_objective obj(samples, labels, num_threads, beta, get_all_labels().size(), 2000);
 
             double C = 300;
             const double min_C = 0.01;
